@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="doubleHolder">
+      <button class="double">double</button>
+    </div>
+
+    <script>
+      //    Q Create a button that is destroyed by clicking on it but two new buttons are created in it's place.
+      let holder=document.querySelector("#doubleHolder");
+      
+        holder.addEventListener("click",function(e){
+          let newBtn=document.createElement("button");
+          newBtn.setAttribute("class","double");
+          newBtn.innerHTML="double";
+
+          let newBtn2=document.createElement("button");
+          newBtn2.setAttribute("class","double");
+          newBtn2.innerText="double";
+          holder.appendChild(newBtn);
+          holder.appendChild(newBtn2);
+          holder.removeChild(btn[i]);
+          
+        })
+      
+      
+    </script>
+  </body>
+</html>
